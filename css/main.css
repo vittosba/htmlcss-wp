@@ -1,0 +1,68 @@
+/* GENEREAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.px-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* TODO: remove me when finished */
+.debug-box {
+    height: 70px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* HEADER */
+header {
+    background: #E579E6;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #E1D67A;
+}
+
+/* COLUMN SECTION */
+.column-section {
+    background: #2089F7;
+}
+
+.columns-heading {
+    margin-bottom: 20px;
+}
+
+.columns .col {
+    float: left;
+    width: 20%;
+}
+
+.columns .col:nth-child(2) {
+    width: 60%;
+}
+
+
+/* FOOTER */
+footer {
+    background: #8D52FC;
+}
