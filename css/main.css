@@ -13,7 +13,6 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
-    color: #000;
 }
 
 /* Utility */
@@ -35,6 +34,13 @@ h1,h2,h3,h4,h5,h6 {
 .px-10 {
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.opacity {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
 }
 
 /* TODO: remove me when finished */
@@ -81,12 +87,8 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 10px;
 }
 
-.hero-opacity {
+.hero .opacity {
     position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .1);
-    border-radius: 10px;
 }
 
 .hero-text {
@@ -103,11 +105,11 @@ h1,h2,h3,h4,h5,h6 {
 
 /* COLUMN SECTION */
 .column-section {
-    background: #2089F7;
 }
 
-.columns-heading {
-    margin-bottom: 20px;
+
+.columns-heading h2 {
+    color: #000;
 }
 
 .columns .col {
@@ -119,8 +121,40 @@ h1,h2,h3,h4,h5,h6 {
     width: 60%;
 }
 
+.columns .col .image {
+    width: 100%;
+    height: 200px;
+}
+
+.columns .col:first-child .image {
+    background: url(../img/img-1.jpg);
+    background-size: contain;
+}
+
+.columns .col:nth-child(2) .image {
+    background: url(../img/banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.columns .col:last-child .image {
+    background: url(../img/img-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.col h3 {
+    margin-bottom: 10px;
+}
+
 
 /* FOOTER */
 footer {
-    background: #8D52FC;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+
+footer .heart {
+    color: red;
 }
